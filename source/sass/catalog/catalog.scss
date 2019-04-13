@@ -1,0 +1,12 @@
+@import "variables.scss";
+@import "__product-name.scss";
+@import "__all-title.scss";
+@import "__all-description.scss";
+@import "__buy-button.scss";
+@import "__all-button.scss";
+@import "__item.scss";
+
+
+.catalog__item {
+  font-family: $second-font;
+}

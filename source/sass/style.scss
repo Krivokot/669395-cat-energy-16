@@ -1,0 +1,18 @@
+//Общие блоки
+@import "scaffolding.scss";
+@import "button/button.scss";
+@import "title/title.scss";
+@import "description/description.scss";
+@import "site-list/site-list.scss";
+@import "link/link.scss";
+
+//Главная страница
+@import "page-header/page-header.scss";
+@import "page-main/page-main.scss";
+@import "main-nav/main-nav.scss";
+@import "programs/programs.scss";
+@import "advantages/advantages.scss";
+@import "page-footer/page-footer.scss";
+
+// Страница каталога
+@import "catalog/catalog.scss";
