@@ -1,0 +1,19 @@
+.page-main-title {
+  background-color: $main-color;
+  color: white;
+}
+
+.page-main__main-image {
+  display: block;
+}
+
+.page-main__description {
+  line-height: 14px;
+  text-transform: uppercase;
+  font-family: $main-font;
+  margin-top: 19px;
+}
+
+.page-main__button {
+  color: white;
+}

@@ -1,18 +1,18 @@
-//Общие блоки
-@import "scaffolding.scss";
-@import "button/button.scss";
-@import "title/title.scss";
-@import "description/description.scss";
-@import "site-list/site-list.scss";
-@import "link/link.scss";
+@import "blocks/variables.scss";
+@import "blocks/scaffolding.scss";
+@import "blocks/button.scss";
+@import "blocks/title.scss";
+@import "blocks/text-box.scss";
+@import "blocks/site-list.scss";
+@import "blocks/link.scss";
 
-//Главная страница
-@import "page-header/page-header.scss";
-@import "page-main/page-main.scss";
-@import "main-nav/main-nav.scss";
-@import "programs/programs.scss";
-@import "advantages/advantages.scss";
-@import "page-footer/page-footer.scss";
 
-// Страница каталога
-@import "catalog/catalog.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/programs.scss";
+@import "blocks/advantages.scss";
+@import "blocks/page-footer.scss";
+
+
+@import "blocks/catalog.scss";
