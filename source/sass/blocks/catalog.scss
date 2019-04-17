@@ -1,0 +1,30 @@
+.catalog__item {
+  font-family: $second-font;
+  margin-bottom: 25px;
+}
+
+.catalog__product-name {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__buy-button {
+  color: white;
+}
+
+.catalog__all-title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__all-description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__all-button {
+  color: $main-font-color;
+  background-color: #f2f2f2;
+}
