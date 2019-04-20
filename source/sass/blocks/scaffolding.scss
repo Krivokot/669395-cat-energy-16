@@ -16,3 +16,10 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@media (min-width: $tablet-width) {
+  body {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

@@ -1,9 +1,35 @@
-.programs {
+.programs__list {
+  display: flex;
+  flex-direction: column;
+  padding: inherit;
+  width: 280px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+.programs__item {
   background-color: $second-color;
+  margin-top: 20px;
 }
 
 .programs__title {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__list {
+    width: 708px;
+    margin-left: 30px;
+  }
+
+  .programs__description {
+    width: 375px;
+    margin-left: 52px;
+  }
+
+  .programs__title {
+    margin-left: 55px;
+  }
 }

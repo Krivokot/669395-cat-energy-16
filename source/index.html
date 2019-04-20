@@ -11,7 +11,7 @@
       <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="../img/logo-mobile.svg" alt="Логотип" width="191" height="39"></a>
       <nav class="main-nav">
         <button class="button main-nav__toggle" type="button">Меню</button>
-        <ul class="main-nav__list site-list">
+        <ul class="visually-hidden main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="site-list__link">главная</a>
           </li>
@@ -24,12 +24,14 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="wrapper page-main">
+      <div class="page-main__intro">
         <h1 class="visually-hidden">Питание Cat Energy</h1>
         <h2 class="title page-main__title">Функциональное питание для котов</h2>
         <p class="text-box page-main__description">Занялся собой? Займись котом!</p>
         <img class="page-main__main-image" src="../img/index-can-mobile@1x.png" alt="Изображение банки с питанием" width="280" height="270"/>
         <a class="button page-main__button" href="#">подобрать программу</a>
+      </div>
       <section class="programs">
         <h1 class="visually-hidden">Выбор программы</h1>
         <ul class="site-list programs__list">
@@ -69,7 +71,7 @@
         </ul>
       </section>
     </main>
-      <footer class="page-footer">
+      <footer class="wrapper page-footer">
         <a class="page-footer__logo" href="#">
           <img class="page-footer__logo-image" src="../img/logo-footer.svg" alt="Логотип" width="128" height="24"/></a>
         <ul class="page-footer__social social">

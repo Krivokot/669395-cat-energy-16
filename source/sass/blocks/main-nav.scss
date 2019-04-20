@@ -1,3 +1,9 @@
-.main-nav {
-  background-color: white;
+.main-nav__toggle {
+  margin-top: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }

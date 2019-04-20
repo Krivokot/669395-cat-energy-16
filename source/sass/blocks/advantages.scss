@@ -1,3 +1,39 @@
 .advantages__title {
-  margin-top: 32px;
+  margin-left: 20px;
+}
+
+.advantages-list {
+  width: 280px;
+  padding: inherit;
+}
+
+.advantages-list__description {
+  width: 200px;
+  margin-left: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    margin-left: 33px;
+    margin-bottom: 0px
+  }
+
+  .advantages-list__description {
+    width: 255px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+  }
+
+  .advantages-list__item {
+    width: 260px;
+    margin-left: 30px;
+    margin-top: 180px;
+  }
+
+  .advantages-list {
+    width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

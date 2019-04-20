@@ -1,19 +1,72 @@
+.page-main__intro {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  padding-top: 29px;
+  display: flex;
+  flex-direction: column;
+}
+
 .page-main__title {
-  background-color: $main-color;
   color: white;
+  text-align: center;
+  margin: auto;
 }
 
 .page-main__main-image {
-  display: block;
+  align-self: center;
+  margin-top: 29px;
 }
 
 .page-main__description {
   line-height: 14px;
   text-transform: uppercase;
   font-family: $main-font;
+  color: white;
   margin-top: 19px;
+  text-align: center;
 }
 
 .page-main__button {
   color: white;
+  text-align: center;
+  align-self: center;
+  width: 280px;
+  padding: 14px 0px 14px 0px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__intro {
+    background-image: none;
+  }
+
+  .page-main__title {
+    color: $second-font-color;
+    text-align: left;
+    width: 420px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 120px;
+  }
+
+  .page-main__description {
+    color: $second-font-color;
+    margin-top: 33px;
+    margin-left: 120px;
+    text-align: left;
+  }
+
+  .page-main__button {
+    color: white;
+    text-align: center;
+    align-self: auto;
+    width: 245px;
+    padding: 17px 0px 17px 0px;
+    margin-left: 120px;
+    margin-top: 48px;
+  }
+
+  .page-main__main-image {
+    align-self: auto;
+    order: 1;
+  }
 }
