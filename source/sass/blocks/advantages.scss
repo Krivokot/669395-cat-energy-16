@@ -37,3 +37,31 @@
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: auto;
+    margin: auto;
+  }
+
+  .advantages-list {
+    width: auto;
+    flex-wrap: nowrap;
+    margin: auto;
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .advantages-list__item {
+    margin-left: 0px;
+  }
+
+  .advantages__title {
+    padding-left: 110px;
+    margin-left: auto;
+    margin-top: 79px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

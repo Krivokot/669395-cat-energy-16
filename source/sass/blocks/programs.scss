@@ -27,9 +27,33 @@
   .programs__description {
     width: 375px;
     margin-left: 52px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .programs__title {
     margin-left: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: auto;
+  }
+
+  .programs__list {
+    flex-direction: row;
+    margin-left: 110px;
+    margin-top: 80px;
+  }
+
+  .programs__item {
+    margin-right: 80px;
+    width: 570px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 37px;
   }
 }

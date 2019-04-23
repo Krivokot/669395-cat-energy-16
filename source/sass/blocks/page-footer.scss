@@ -40,3 +40,19 @@
     margin-top: 63px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .page-footer__logo {
+    margin-left: 0px;
+  }
+
+  .page-footer__copyright {
+    margin-right: 0px;
+  }
+}

@@ -70,3 +70,40 @@
     order: 1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: auto;
+  }
+
+  .page-main__intro {
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 226px;
+    padding-bottom: 188px;
+    margin-top: -110px;
+  }
+
+  .page-main__main-image {
+    align-self: center;
+    margin: auto;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+  }
+
+  .page-main__button {
+    margin-top: 53px;
+    margin-left: 193px;
+  }
+
+  .page-main__title {
+    margin-left: 193px;
+  }
+
+  .page-main__description {
+    margin-left: 193px;
+    line-height: 20px;
+  }
+}
