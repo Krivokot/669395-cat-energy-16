@@ -28,3 +28,74 @@
   color: $main-font-color;
   background-color: #f2f2f2;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .catalog__item {
+    width: 220px;
+    background-color: $second-color;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    padding: 40px;
+  }
+
+  .catalog__product-name {
+    text-align: center;
+  }
+
+  .catalog__field {
+    width: 400px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog__value {
+    width: 150px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog__buy-button {
+    display: inline-block;
+    padding: 13px 50px 13px 50px;
+    margin-top: 33px;
+  }
+
+  .catalog__item--border {
+    text-align: center;
+    border: 2px solid $second-color;
+    background-color: white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-title {
+    margin-left: 110px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .catalog__item {
+    width: 160px;
+  }
+
+  .catalog__list {
+    margin: 70px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog__buy-button {
+    padding: 13px 40px 13px 40px;
+  }
+
+  .catalog__product-name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
