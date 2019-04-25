@@ -2,12 +2,12 @@
   margin-left: 20px;
 }
 
-.advantages-list {
+.advantages__list {
   width: 280px;
-  padding: inherit;
+  padding: 0px;
 }
 
-.advantages-list__description {
+.advantages__description {
   width: 200px;
   margin-left: 100px;
 }
@@ -18,20 +18,20 @@
     margin-bottom: 0px
   }
 
-  .advantages-list__description {
+  .advantages__description {
     width: 255px;
     font-size: 16px;
     line-height: 24px;
     margin: auto;
   }
 
-  .advantages-list__item {
+  .advantages__item {
     width: 260px;
     margin-left: 30px;
     margin-top: 180px;
   }
 
-  .advantages-list {
+  .advantages__list {
     width: 708px;
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +44,7 @@
     margin: auto;
   }
 
-  .advantages-list {
+  .advantages__list {
     width: auto;
     flex-wrap: nowrap;
     margin: auto;
@@ -53,7 +53,7 @@
     padding-right: 110px;
   }
 
-  .advantages-list__item {
+  .advantages__item {
     margin-left: 0px;
   }
 
