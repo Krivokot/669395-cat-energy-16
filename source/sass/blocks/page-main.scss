@@ -31,7 +31,7 @@
   text-align: center;
   align-self: center;
   width: 280px;
-  padding: 14px 0px 14px 0px;
+  padding: 14px 0 14px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,7 +60,7 @@
     text-align: center;
     align-self: auto;
     width: 245px;
-    padding: 17px 0px 17px 0px;
+    padding: 17px 0 17px 0;
     margin-left: 120px;
     margin-top: 48px;
   }
