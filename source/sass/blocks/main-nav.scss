@@ -1,3 +1,31 @@
-.main-nav {
-  background-color: white;
+.main-nav__toggle {
+  margin-top: 19px;
+}
+
+.main-nav__list {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    width: 600px;
+    margin-left: auto;
+  }
+
+  .main-nav__item {
+    margin-right: 38px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 530px;
+    margin: 0;
+  }
 }

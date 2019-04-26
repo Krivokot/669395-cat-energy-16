@@ -12,24 +12,26 @@
       <nav class="main-nav">
         <button class="button main-nav__toggle" type="button">Меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="main-nav__item site-list__item site-list__item--active">
             <a class="site-list__link">главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item site-list__item">
             <a class="site-list__link" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item site-list__item">
             <a class="site-list__link" href="programs.html">подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="wrapper page-main">
+      <div class="page-main__intro">
         <h1 class="visually-hidden">Питание Cat Energy</h1>
         <h2 class="title page-main__title">Функциональное питание для котов</h2>
         <p class="text-box page-main__description">Занялся собой? Займись котом!</p>
         <img class="page-main__main-image" src="../img/index-can-mobile@1x.png" alt="Изображение банки с питанием" width="280" height="270"/>
         <a class="button page-main__button" href="#">подобрать программу</a>
+      </div>
       <section class="programs">
         <h1 class="visually-hidden">Выбор программы</h1>
         <ul class="site-list programs__list">
@@ -53,23 +55,23 @@
       <section class="advantages">
         <h1 class="visually-hidden">Преимущества</h1>
         <h2 class="title advantages__title">Как это работает</h2>
-        <ul class="site-list advantages-list">
-          <li class="advantages-list__item advantages-list__item--useful">
-            <p class="text-box advantages-list__description">Функциональное питание содержит только полезные питательные вещества.</p>
+        <ul class="site-list advantages__list">
+          <li class="advantages__item advantages__item--useful">
+            <p class="text-box advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
-          <li class="advantages-list__item advantages-list__item--simplicity">
-            <p class="text-box advantages-list__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          <li class="advantages__item advantages__item--simplicity">
+            <p class="text-box advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
-          <li class="advantages-list__item advantages-list__item--food">
-            <p class="text-box advantages-list__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          <li class="advantages__item advantages__item--food">
+            <p class="text-box advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
-          <li class="advantages-list__item advantages-list__item--time">
-            <p class="text-box advantages-list__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <li class="advantages__item advantages__item--time">
+            <p class="text-box advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
       </section>
     </main>
-      <footer class="page-footer">
+      <footer class="wrapper page-footer">
         <a class="page-footer__logo" href="#">
           <img class="page-footer__logo-image" src="../img/logo-footer.svg" alt="Логотип" width="128" height="24"/></a>
         <ul class="page-footer__social social">

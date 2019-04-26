@@ -1,5 +1,22 @@
 .page-header {
-  background-color: $main-color;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  display: flex;
+}
+
+.page-header__logo {
+  margin-right: 65px;
+  margin-top: 11px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: auto;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 53px;
+  }
+
+  .page-header__logo {
+    margin-top: auto;
+    margin-left: 109px;
+  }
 }
