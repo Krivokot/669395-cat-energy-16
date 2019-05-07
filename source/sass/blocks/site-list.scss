@@ -4,4 +4,8 @@
 
 .site-list__link {
   text-decoration: none;
+
+  &:visited {
+    color: $second-font-color;
+  }
 }

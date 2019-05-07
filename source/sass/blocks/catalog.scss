@@ -1,6 +1,11 @@
 .catalog__item {
+  width: 320px;
   font-family: $second-font;
   margin-bottom: 25px;
+}
+
+.catalog__item-flex {
+  display: flex;
 }
 
 .catalog__product-name {

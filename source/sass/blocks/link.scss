@@ -2,4 +2,8 @@
   text-decoration: none;
   color: $second-font-color;
   text-transform: uppercase;
+
+  &:visited {
+    color: $second-font-color;
+  }
 }
