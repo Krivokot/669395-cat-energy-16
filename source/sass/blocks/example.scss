@@ -38,7 +38,7 @@
   text-align: center;
   padding-top: 13px;
   padding-bottom: 17px;
-  border: 1px solid $extra-color
+  border: 1px solid $extra-color;
 }
 
 .example__days {
@@ -211,7 +211,7 @@
       height: 34px;
       background-color: white;
       border-radius: 50%;
-      box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     }
 
     &::after {
@@ -226,7 +226,8 @@
     }
   }
 
-  .example__before, .example__after {
+  .example__before,
+  .example__after {
     border-bottom: 1px dotted $extra-color;
     padding-bottom: 6px;
   }
