@@ -10,11 +10,12 @@
   color: white;
   text-align: center;
   margin: auto;
+  margin-top: -1px;
 }
 
 .page-main__main-image {
   align-self: center;
-  margin-top: 29px;
+  margin-top: 15px;
 }
 
 .page-main__description {
@@ -22,7 +23,7 @@
   text-transform: uppercase;
   font-family: $main-font;
   color: white;
-  margin-top: 19px;
+  margin-top: 23px;
   text-align: center;
 }
 
@@ -31,12 +32,15 @@
   text-align: center;
   align-self: center;
   width: 280px;
-  padding: 14px 0 14px 0;
+  padding: 11px 0 11px 0;
+  margin-top: 5px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__intro {
     background-image: none;
+    padding-top: 50px;
+
   }
 
   .page-main__title {
@@ -45,13 +49,13 @@
     width: 420px;
     font-size: 60px;
     line-height: 60px;
-    margin-left: 120px;
+    margin-left: 110px;
   }
 
   .page-main__description {
     color: $second-font-color;
-    margin-top: 33px;
-    margin-left: 120px;
+    margin-top: 43px;
+    margin-left: 110px;
     text-align: left;
   }
 
@@ -61,49 +65,59 @@
     align-self: auto;
     width: 245px;
     padding: 17px 0 17px 0;
-    margin-left: 120px;
-    margin-top: 48px;
+    margin-left: 110px;
+    margin-top: 30px;
+    z-index: 1;
   }
 
   .page-main__main-image {
-    align-self: auto;
-    order: 1;
+    width: 709px;
+    height: 609px;
+    margin-top: -80px;
+    margin-left: 20px;
+  }
+
+  .page-main__main-picture {
+    order: 2;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main {
     width: auto;
+    margin-top: -122px;
+    margin-right: 0;
   }
 
   .page-main__intro {
     background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    padding-top: 226px;
-    padding-bottom: 188px;
-    margin-top: -110px;
+    background-position: 720px 0px;
+    padding-bottom: 190px;
   }
 
   .page-main__main-image {
     align-self: center;
     margin: auto;
     position: absolute;
-    top: 200px;
-    left: 600px;
+    width: 550px;
+    height: 499px;
+    top: 142px;
+    left: 570px;
   }
 
   .page-main__button {
-    margin-top: 53px;
-    margin-left: 193px;
+    margin-top: 32px;
+    margin-left: 188px;
   }
 
   .page-main__title {
-    margin-left: 193px;
+    margin-top: 172px;
+    margin-left: 190px;
   }
 
   .page-main__description {
-    margin-left: 193px;
+    margin-left: 190px;
+    margin-top: 41px;
     line-height: 20px;
   }
 }

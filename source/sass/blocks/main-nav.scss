@@ -1,9 +1,35 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__toggle {
-  margin-top: 19px;
+  background-image: url(../img/icon-close.svg);
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 240px;
+  left: 280px;
 }
 
 .main-nav__list {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 20px;
+  color: $second-font-color;
+  text-transform: uppercase;
+  text-align: center;
+  width: 320px;
+  margin-left: -40px;
+  margin-bottom: 0;
+}
+
+.main-nav__item {
+  border-top: 1px solid $extra-color;
+  padding: 24px 0 24px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -12,20 +38,26 @@
   }
 
   .main-nav__list {
-    display: flex;
+    font-size: 18px;
+    line-height: 25px;
+    flex-direction: row;
     width: 600px;
-    margin-left: auto;
+    margin-left: 40px;
+    margin-top: 11px;
   }
 
   .main-nav__item {
-    margin-right: 38px;
+    margin-right: 35px;
     text-transform: uppercase;
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    width: 530px;
-    margin: 0;
+    font-size: 20px;
+    margin-left: 510px;
+    padding-top: 30px;
+    color: white;
   }
 }

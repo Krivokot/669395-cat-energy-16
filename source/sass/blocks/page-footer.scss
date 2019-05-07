@@ -10,13 +10,28 @@
 }
 
 .page-footer__social {
-  margin-top: 31px;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+  padding-top: 24px;
+  padding-bottom: 21px;
+  list-style: none;
+  border-top: 1px solid $extra-color;
+  border-bottom: 1px solid $extra-color;
 }
 
 .page-footer__copyright {
   width: 280px;
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
+}
+
+.page-footer__copyright-text {
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
