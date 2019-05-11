@@ -1,52 +1,114 @@
-.catalog__item {
+.catalog__title {
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.catalog__list {
   width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__item {
   font-family: $second-font;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
+  border-top: 1px solid $extra-color;
 }
 
 .catalog__item-flex {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__image {
+  margin-left: 20px;
+  margin-bottom: -4px;
 }
 
 .catalog__product-name {
+  width: 100px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 21px;
+  margin-bottom: 11px;
+}
+
+.catalog__options {
+  margin-left: -3px;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.catalog__value {
+  display: block;
+  margin-left: 63px;
+  text-align: center;
 }
 
 .catalog__buy-button {
-  color: white;
+  margin-left: 20px;
 }
 
 .catalog__all-title {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 13px;
   text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  margin-top: 83px;
+  margin-bottom: 3px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icon-plus-mobile.svg");
+    width: 31px;
+    height: 31px;
+    bottom: 40px;
+    left: 45%;
+  }
 }
 
 .catalog__all-description {
   font-size: 12px;
   line-height: 16px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .catalog__all-button {
   color: $main-font-color;
   background-color: #f2f2f2;
+  margin-left: 20px;
+  margin-bottom: 24px;
+}
+
+.catalog__item--border {
+  border-bottom: 1px solid $extra-color;
 }
 
 @media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 21px;
+    margin-top: 48px;
+    margin-bottom: 156px;
+  }
+
   .catalog__list {
+    width: 738px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin-left: 22px;
   }
 
   .catalog__item {
-    width: 220px;
+    width: 324px;
     background-color: $second-color;
-    margin-right: 60px;
+    margin-right: 30px;
     margin-bottom: 50px;
-    padding: 40px;
   }
 
   .catalog__product-name {

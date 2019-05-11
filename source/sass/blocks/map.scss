@@ -5,7 +5,20 @@
 }
 
 .map-info {
+  width: 320px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-bottom: -52px;
   display: flex;
+  z-index: 1;
+}
+
+.map-info--color {
+  padding-top: 14px;
+  color: $second-font-color;
+  background-color: $second-color;
+  margin-bottom: -52px;
+  z-index: 1;
 }
 
 .map-info__description {
@@ -13,7 +26,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-left: 19px;
 }
 
 .map-info__description--address {
@@ -25,6 +38,7 @@
 
 .map__image {
   margin-top: 15px;
+  margin-bottom: -3px;
 }
 
 @media (min-width: $tablet-width) {
