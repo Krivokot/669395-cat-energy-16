@@ -53,21 +53,22 @@
   margin-bottom: 25px;
 }
 
-.main-form__radio-label input[type="radio"]+.main-form__radio-label--radio-indicator {
+.main-form__radio-label input[type="radio"] + .main-form__radio-label--radio-indicator {
   position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      top: -5px;
-      left: -47px;
-      border-radius: 50%;
-      border: $border-bottom;
-    }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: -47px;
+    border-radius: 50%;
+    border: $border-bottom;
+  }
 }
 
-.main-form__radio-label input[type="radio"]:checked+.main-form__radio-label--radio-indicator {
+.main-form__radio-label input[type="radio"]:checked + .main-form__radio-label--radio-indicator {
   &::after {
     content: "";
     position: absolute;
@@ -162,20 +163,21 @@
   margin-bottom: 40px;
 }
 
-.main-form__checkbox input[type="checkbox"]+.main-form__checkbox--indicator {
+.main-form__checkbox input[type="checkbox"] + .main-form__checkbox--indicator {
   position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      top: -2px;
-      left: -47px;
-      border: $border-bottom;
-    }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    left: -47px;
+    border: $border-bottom;
+  }
 }
 
-.main-form__checkbox input[type="checkbox"]:checked+.main-form__checkbox--indicator {
+.main-form__checkbox input[type="checkbox"]:checked + .main-form__checkbox--indicator {
   &::after {
     content: "";
     position: absolute;
@@ -251,16 +253,16 @@
     margin-bottom: 33px;
   }
 
-  .main-form__radio-label input[type="radio"]+.main-form__radio-label--radio-indicator {
-      &::before {
-        width: 40px;
-        height: 40px;
-        top: -5px;
-        left: -60px;
-      }
+  .main-form__radio-label input[type="radio"] + .main-form__radio-label--radio-indicator {
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -5px;
+      left: -60px;
+    }
   }
 
-  .main-form__radio-label input[type="radio"]:checked+.main-form__radio-label--radio-indicator {
+  .main-form__radio-label input[type="radio"]:checked + .main-form__radio-label--radio-indicator {
     &::after {
       width: 18px;
       height: 18px;
@@ -341,11 +343,11 @@
     width: 253px;
     margin-top: -32px;
     margin-left: 6px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     background-color: white;
   }
 
-  .main-form__checkbox input[type="checkbox"]+.main-form__checkbox--indicator {
+  .main-form__checkbox input[type="checkbox"] + .main-form__checkbox--indicator {
     &::before {
       width: 40px;
       height: 40px;
@@ -354,7 +356,7 @@
     }
   }
 
-  .main-form__checkbox input[type="checkbox"]:checked+.main-form__checkbox--indicator {
+  .main-form__checkbox input[type="checkbox"]:checked + .main-form__checkbox--indicator {
     &::after {
       width: 22px;
       height: 17px;
@@ -426,6 +428,7 @@
 
   .main-form__input-email {
     margin-right: -27px;
+
     &::after {
       right: 22px;
     }
@@ -490,6 +493,6 @@
   .main-form__submit-button {
     display: flex;
     margin-top: 79px;
-    margin-bottom: 71px;
+    margin-bottom: 116px;
   }
 }

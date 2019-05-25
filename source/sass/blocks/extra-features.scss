@@ -83,22 +83,22 @@
   padding: 187px 50px 43px 50px;
   position: relative;
 
-   &::before {
-     content: "";
-     position: absolute;
-     background-image: url("/img/icon-gift.svg");
-     width: 56px;
-     height: 61px;
-     top: 65px;
-     left: 112px;
-   }
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icon-gift.svg");
+    width: 56px;
+    height: 61px;
+    top: 65px;
+    left: 112px;
+  }
 }
 
 .extra-features__gift-description--line {
   display: block;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .extra-features {
     margin-top: -51px;
     width: 768px;
@@ -182,21 +182,21 @@
     padding: 72px 0 69px 0;
     margin-left: 423px;
 
-     &::before {
-       left: -333px;
-     }
+    &::before {
+      left: -333px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra-features {
     width: auto;
-    margin-bottom: 19px;
+    margin-bottom: 63px;
   }
 
   .extra-features__title {
     margin-left: 70px;
-}
+  }
 
   .extra-features--flex {
     display: flex;
@@ -256,9 +256,9 @@
     padding: 171px 0 69px 0;
     margin-left: 27px;
 
-     &::before {
-       left: 68px;
-       top: 49px;
-     }
+    &::before {
+      left: 68px;
+      top: 49px;
+    }
   }
 }

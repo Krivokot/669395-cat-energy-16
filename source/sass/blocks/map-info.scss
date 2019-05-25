@@ -2,7 +2,6 @@
   width: 320px;
   padding-bottom: 10px;
   background-color: white;
-  margin-bottom: -52px;
   display: flex;
   z-index: 1;
 
@@ -10,7 +9,6 @@
     padding-top: 14px;
     color: $second-font-color;
     background-color: $second-color;
-    margin-bottom: -52px;
     z-index: 1;
   }
 }
@@ -36,14 +34,12 @@
     width: 768px;
     padding-bottom: 40px;
     background-color: white;
-    margin-bottom: -52px;
     display: flex;
     z-index: 1;
 
     &--color {
       color: $second-font-color;
       background-color: $second-color;
-      margin-bottom: -52px;
       padding-top: 48px;
       z-index: 1;
     }
@@ -76,7 +72,7 @@
     background-color: white;
     z-index: 1;
     margin-left: 111px;
-    margin-top: 46px;
+    margin-top: 2px;
     justify-content: space-between;
     padding: 62px 57px 62px 76px;
   }

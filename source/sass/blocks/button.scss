@@ -2,10 +2,9 @@
   background-color: $main-color;
   text-transform: uppercase;
   text-decoration: none;
-  color: $second-font-color;
   display: block;
   width: 280px;
-  font-family: "oswaldregular";
+  font-family: $main-font, $second-font, sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;

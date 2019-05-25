@@ -10,13 +10,14 @@
 }
 
 .page-footer__social {
-  width: 126px;
+  width: 125px;
   display: flex;
   justify-content: space-between;
   margin-top: 27px;
   padding-top: 24px;
+  padding-right: 80px;
+  padding-left: 72px;
   padding-bottom: 17px;
-  margin-left: -50px;
   list-style: none;
   border-top: 1px solid $extra-color;
   border-bottom: 1px solid $extra-color;
@@ -115,15 +116,13 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    width: auto;
-    padding-left: 110px;
-    padding-right: 110px;
-    margin-left: 0px;
+    width: 1440px;
+    margin-left: 0;
   }
 
   .page-footer__logo {
-    margin-top: 29px;
-    margin-left: 0px;
+    margin-top: 23px;
+    margin-left: 110px;
   }
 
   .page-footer__copyright-text {
@@ -134,12 +133,13 @@
   }
 
   .page-footer__copyright {
-    margin-right: -39px;
+    margin-top: 3px;
+    margin-right: 103px;
   }
 
   .page-footer__social {
-    margin-top: 40px;
-    margin-left: -13px;
+    margin-top: 35px;
+    margin-left: -15px;
     border: none;
     width: 125px;
   }
