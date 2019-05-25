@@ -8,4 +8,62 @@
   &:visited {
     color: $second-font-color;
   }
+
+  &:hover {
+    color: rgba(17, 17, 17, 0.6)
+  }
+
+  &--active {
+    border-bottom: 2px solid white;
+    padding-bottom: 6px;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link {
+    &--active-white {
+      border-bottom: 2px solid $main-color;
+      padding-bottom: 7px;
+    }
+
+    &--active-green {
+      border-bottom: 2px solid $main-color;
+      padding-bottom: 7px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    &--white {
+      color: white;
+
+      &:visited {
+        color: white;
+      }
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    &--active-white {
+      border-bottom: 2px solid white;
+      padding-bottom: 7px;
+    }
+
+    &--active-green {
+      border-bottom: 2px solid $main-color;
+      padding-bottom: 7px;
+    }
+  }
 }

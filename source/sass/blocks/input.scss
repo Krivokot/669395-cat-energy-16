@@ -1,0 +1,19 @@
+.input {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $main-font;
+  text-transform: uppercase;
+  border: 1px solid $extra-color;
+  padding: 12px 0 13px 15px;
+  margin-left: 11px;
+  flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 13px 0 13px 20px;
+    margin-left: 17px;
+  }
+}

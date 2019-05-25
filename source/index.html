@@ -2,29 +2,42 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
     <link href="./css/style.css" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        .main-nav__list {
+          display: flex;
+        }
+
+        .main-nav__toggle {
+          display: none;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
     <header class="wrapper page-header">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo" href="index.html">
         <picture>
+          <source media="(min-width: 1300px)" srcset="../img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
           <img class="page-header__logo-image" src="../img/logo-mobile.svg" alt="Логотип" width="191" height="39">
         </picture>
       </a>
       <nav class="main-nav">
         <button class="button main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-        <ul class="main-nav__list site-list">
-          <li class="main-nav__item site-list__item site-list__item--active">
-            <a class="site-list__link">главная</a>
+        <ul class="main-nav__list site-list" id="navi">
+          <li class="main-nav__item site-list__item">
+            <a class="site-list__link site-list__link--white site-list__link--active-white">главная</a>
           </li>
           <li class="main-nav__item site-list__item">
-            <a class="site-list__link" href="catalog.html">каталог продукции</a>
+            <a class="site-list__link site-list__link--white" href="catalog.html">каталог продукции</a>
           </li>
           <li class="main-nav__item site-list__item">
-            <a class="site-list__link" href="programs.html">подбор программы</a>
+            <a class="site-list__link site-list__link--white" href="programs.html">подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -35,11 +48,11 @@
         <h2 class="title page-main__title">Функциональное питание для котов</h2>
         <p class="text-box page-main__description">Занялся собой? Займись котом!</p>
         <picture class="page-main__main-picture">
-          <source media="(min-width: 1200px)" srcset="../img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="../img/index-can-tablet@1x.jpg">
-          <img class="page-main__main-image" src="../img/index-can-mobile@1x.png" alt="Изображение банки с питанием" width="280" height="270"/>
+          <source media="(min-width: 1300px)" srcset="../img/index-can-desktop@1x.png 1x, ../img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="../img/index-can-tablet@1x.jpg 1x, ../img/index-can-tablet@2x.jpg 2x">
+          <img class="page-main__main-image" src="../img/index-can-mobile@1x.png" srcset="../img/index-can-mobile@2x.png 2x" alt="Изображение банки с питанием" width="280" height="270"/>
         </picture>
-        <a class="button page-main__button" href="#">подобрать программу</a>
+        <a class="button page-main__button" href="programs.html">подобрать программу</a>
       </div>
       <section class="programs">
         <h1 class="visually-hidden">Выбор программы</h1>
@@ -49,7 +62,7 @@
             <p class="text-box programs__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="link programs__go-to-button" href="#">Каталог Slim</a>
+            <a class="link programs__go-to-button" href="catalog-slim.html">Каталог Slim</a>
           </li>
           <li class="programs__item programs__item--pro">
             <h3 class="title programs__title">Набор массы</h3>
@@ -57,7 +70,7 @@
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="link programs__go-to-button" href="#">Каталог Pro</a>
+            <a class="link programs__go-to-button" href="catalog-pro.html">Каталог Pro</a>
           </li>
         </ul>
       </section>
@@ -96,12 +109,13 @@
               <div class="example__measuring-description">затрачено времени</div>
             </div>
           </div>
-          <p class="example__description--uppercase">Затраты на питание: <span class="example__result-price">15 000 руб.</span></p>
+          <p class="example__description example__description--uppercase">Затраты на питание: <span class="example__result-price">15 000 руб.</span></p>
         </div>
         <div class="example-flex__column-right">
           <picture>
-            <source media="(min-width: 768px)" srcset="../img/before-tablet@1x.png">
-            <img class="example__image" src="../img/before-mobile@1x.png" alt="Изображение кота" width="321" height="240"/>
+            <source media="(min-width: 1300px)" srcset="../img/before-desktop@1x.png 1x, ../img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="../img/before-tablet@1x.png 1x, ../img/before-tablet@2x.png 2x">
+            <img class="example__image" src="../img/before-mobile@1x.png" srcset="../img/before-mobile@2x.png 2x" alt="Изображение кота" width="321" height="240"/>
           </picture>
           <div class="example__slider">
             <p class="example__before">Было</p>
@@ -115,10 +129,10 @@
         <div class="map-info">
           <h1 class="visually-hidden title map-info__title">Как нас найти</h1>
           <h2 class="map-info__description">приглашаем </br> к сотрудничеству дилеров!</h2>
-          <p class="text-box map-info__description--address">ул. Большая Конюшенная, д. 19/8 <span class="map-info__city">Санкт-Петербург</span></p>
+          <p class="text-box map-info__description map-info__description--address">ул. Большая Конюшенная, д. 19/8 <span class="map-info__city">Санкт-Петербург</span></p>
         </div>
           <picture>
-            <source media="(min-width: 1200px)" srcset="../img/bg-map-desktop@1x.png">
+            <source media="(min-width: 1300px)" srcset="../img/bg-map-desktop@1x.png">
             <source media="(min-width: 768px)" srcset="../img/bg-map-tablet@1x.png">
             <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта"></img>
           </picture>
@@ -129,21 +143,41 @@
           <img class="page-footer__logo-image" src="../img/logo-footer.svg" alt="Логотип" width="128" height="24"/></a>
         <ul class="page-footer__social">
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link page-footer__social-link--vk" href="#">VK</a>
+            <a class="page-footer__social-link page-footer__social-link--vk" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="/img/icon-vk.svg" />
+                <source media="(min-width: 768px)" srcset="/img/icon-vk.svg" />
+                <img class="page-footer__social-img page-footer__social-img--vk" src="../img/icon-vk-mobile.svg" alt="Мы Вконтакте" width="30" height="16"/>
+              </picture>
+            </a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link page-footer__social-link--inst" href="#">Instagram</a>
+            <a class="page-footer__social-link page-footer__social-link--inst" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="/img/icon-insta.svg" />
+                <source media="(min-width: 768px)" srcset="/img/icon-insta.svg" />
+                <img class="page-footer__social-img page-footer__social-img--insta" src="../img/icon-insta-mobile.svg" alt="Мы в Инстаграм" width="23" height="23"/>
+              </picture>
+            </a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link page-footer__social-link--fb" href="#">Facebook</a>
+            <a class="page-footer__social-link page-footer__social-link--fb" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="/img/icon-fb.svg" />
+                <source media="(min-width: 768px)" srcset="/img/icon-fb.svg" />
+                <img class="page-footer__social-img page-footer__social-img--fb" src="../img/icon-fb-mobile.svg" alt="Мы в Фэйсбук" width="14" height="26"/>
+              </picture>
+            </a>
           </li>
         </ul>
         <div class="page-footer__copyright">
-          <a class="page-footer__copyright-text" href="#">HTML Academy</a>
-          <a class="page-footer__copyright-logo" href="#">
-            <img class="page-footer__copyright-image" src="../img/htmlacademy.svg" alt="Логотип Академии" width="27" height="34"/>
+          <a class="page-footer__copyright-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="page-footer__copyright-image" src="../img/htmlacademy.svg" alt="Логотип Академии" width="37" height="44"/>
           </a>
         </div>
       </footer>
+      <script src="js/script.js">
+      </script>
   </body>
 </html>

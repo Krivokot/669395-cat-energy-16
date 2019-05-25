@@ -200,6 +200,17 @@
 
   .programs__go-to-button {
     margin-left: 33px;
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      left: 130px;
+      top: 8px;
+      width: 35px;
+      height: 12px;
+      background-image: url("../img/icon-right-arrow-long.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .programs__description {

@@ -1,9 +1,13 @@
 $main-color: #68b738;
 $second-color: #efefef;
 $extra-color: #cdcdcd;
-$main-font: "Oswald";
+$second-extra-color: #f2f2f2;
+$main-font: "oswaldregular";
 $main-font-color: #666666;
 $second-font: "Arial";
-$second-font-color: #111111;
+$second-font-color: #222222;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$border-bottom: 1px solid $extra-color;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

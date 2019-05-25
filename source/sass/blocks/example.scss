@@ -15,6 +15,17 @@
   padding-right: 25px;
   padding-left: 20px;
   margin-bottom: 25px;
+
+  &--uppercase {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $second-font-color;
+    text-align: center;
+    margin-top: 19px;
+    margin-left: 8px;
+    margin-bottom: 14px;
+  }
 }
 
 .example__measuring-wrapper {
@@ -66,15 +77,6 @@
   margin-top: -9px;
   margin-left: 18px;
   background-color: $second-color;
-}
-
-.example__description--uppercase {
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $second-font-color;
-  text-align: center;
-  margin-top: 19px;
 }
 
 .example__image {
@@ -138,6 +140,16 @@
     margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
+
+    &--uppercase {
+      font-size: 20px;
+      line-height: 29px;
+      text-align: right;
+      margin-top: -70px;
+      margin-left: 527px;
+      margin-bottom: 20px;
+      width: 180px;
+    }
   }
 
   .example__measuring {
@@ -170,15 +182,6 @@
     margin-top: -9px;
     margin-left: 8px;
     background-color: white;
-  }
-
-  .example__description--uppercase {
-    font-size: 20px;
-    line-height: 29px;
-    text-align: right;
-    margin-top: -70px;
-    margin-left: 550px;
-    width: 180px;
   }
 
   .example__image {
@@ -236,9 +239,9 @@
 @media (min-width: $desktop-width) {
   .example {
     padding-left: 89px;
-    padding-bottom: 75px;
-    background: linear-gradient(to bottom, white 50%, $second-color 50%);
-    background-repeat: no-repeat;
+    padding-bottom: 5px;
+    background: linear-gradient(top, white 23%, $second-color 23%, $second-color 80%);
+    background-position: 0 -4px;
   }
 
   .example__title {
@@ -252,18 +255,17 @@
     flex-wrap: nowrap;
   }
 
-  .example__description--uppercase {
-    text-align: center;
-    margin: auto;
-    margin-left: 21px;
-    margin-top: 51px;
-    width: 270px;
-  }
-
   .example__description {
     width: 435px;
     margin-top: 26px;
     margin-bottom: 69px;
+
+    &--uppercase {
+      text-align: center;
+      margin-left: -22px;
+      margin-top: 52px;
+      width: 370px;
+    }
   }
 
   .example__measuring-description {
@@ -273,5 +275,14 @@
   .example__image {
     margin-left: 111px;
     margin-top: -240px;
+    margin-bottom: 20px;
+  }
+
+  .example__slider {
+    margin-left: 190px;
+  }
+
+  .example__result-price {
+    margin-left: 58px;
   }
 }

@@ -9,3 +9,9 @@
     margin: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: 1440px;
+  }
+}

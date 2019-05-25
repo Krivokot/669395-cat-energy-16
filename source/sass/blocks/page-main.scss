@@ -5,6 +5,10 @@
   padding-top: 29px;
   display: flex;
   flex-direction: column;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .page-main__title {
@@ -41,7 +45,7 @@
 @media (min-width: $tablet-width) {
   .page-main__intro {
     background-image: none;
-    padding-top: 50px;
+    padding-top: 45px;
   }
 
   .page-main__title {
@@ -54,6 +58,7 @@
   }
 
   .page-main__description {
+    width: 300px;
     color: $second-font-color;
     margin-top: 43px;
     margin-left: 110px;
@@ -61,6 +66,8 @@
   }
 
   .page-main__button {
+    font-size: 20px;
+    line-height: 20px;
     color: white;
     text-align: center;
     align-self: auto;
@@ -85,16 +92,21 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    width: auto;
+    width: 1440px;
     margin-top: -122px;
-    margin-right: 0;
   }
 
   .page-main__intro {
+    width: auto;
+    padding-bottom: 189px;
     background-image: url("../img/index-background-desktop@1x.jpg");
-    background-position: 720px 0;
-    padding-bottom: 190px;
+    background-position: right;
+    margin-bottom: 79px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
   }
+}
 
   .page-main__main-image {
     align-self: center;
@@ -107,16 +119,28 @@
   }
 
   .page-main__button {
+    font-size: 20px;
+    line-height: 20px;
     margin-top: 32px;
     margin-left: 188px;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .page-main__title {
-    margin-top: 172px;
+    margin-top: 177px;
     margin-left: 190px;
   }
 
   .page-main__description {
+    width: 292px;
     margin-left: 190px;
     margin-top: 41px;
     line-height: 20px;

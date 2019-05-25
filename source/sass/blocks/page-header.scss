@@ -11,13 +11,18 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: auto;
+    width: 768px;
     flex-direction: row;
   }
 
   .page-header__logo {
-    margin-top: 26px;
-    margin-right: auto;
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
   }
 }
 
@@ -27,8 +32,13 @@
   }
 
   .page-header__logo {
-    margin-top: auto;
+    margin-top: 45px;
     margin-left: 110px;
-    margin-right: 0;
+    margin-right: -9px;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }

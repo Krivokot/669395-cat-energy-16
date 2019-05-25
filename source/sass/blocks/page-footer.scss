@@ -10,50 +10,106 @@
 }
 
 .page-footer__social {
-  width: 180px;
+  width: 126px;
   display: flex;
   justify-content: space-between;
   margin-top: 27px;
   padding-top: 24px;
-  padding-bottom: 21px;
+  padding-bottom: 17px;
+  margin-left: -50px;
   list-style: none;
   border-top: 1px solid $extra-color;
   border-bottom: 1px solid $extra-color;
 }
 
+.page-footer__social-img--vk {
+  width: 22px;
+  height: 12px;
+}
+
+.page-footer__social-img--insta {
+  width: 17px;
+  height: 17px;
+}
+
+.page-footer__social-img--fb {
+  width: 10px;
+  height: 19px;
+}
+
 .page-footer__copyright {
-  width: 280px;
+  width: 287px;
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 16px;
+  margin-left: 5px;
 }
 
 .page-footer__copyright-text {
+  font-family: $second-font;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
+  color: #444444;
+  margin-left: 0;
+}
+
+.page-footer__copyright-image {
+  width: 40px;
+  height: 40px;
+  margin-top: -10px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    width: auto;
+    width: 768px;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 20px;
   }
 
   .page-footer__copyright {
-    display: block;
     width: auto;
-    margin-right: 30px;
+    margin-right: 32px;
+    margin-top: 8px;
+    align-items: center;
+  }
+
+  .page-footer__copyright-image {
+    margin-top: 22px;
+    margin-left: 15px;
+  }
+
+  .page-footer__copyright-text {
+    margin-top: 18px;
+  }
+
+  .page-footer__social-img--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .page-footer__social-img--insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .page-footer__social-img--fb {
+    width: 15px;
+    height: 26px;
+    margin-top: -2px;
   }
 
   .page-footer__logo {
-    margin-top: 0;
-    margin-left: 30px;
+    margin-top: 30px;
+    margin-left: 23px;
   }
 
   .page-footer__social {
-    margin-top: 63px;
+    width: 125px;
+    margin-top: 41px;
+    margin-left: -18px;
+    border: none;
   }
 }
 
@@ -62,13 +118,29 @@
     width: auto;
     padding-left: 110px;
     padding-right: 110px;
+    margin-left: 0px;
   }
 
   .page-footer__logo {
-    margin-left: 0;
+    margin-top: 29px;
+    margin-left: 0px;
+  }
+
+  .page-footer__copyright-text {
+    font-family: $second-font;
+    font-size: 16px;
+    line-height: 16px;
+    color: #444444;
   }
 
   .page-footer__copyright {
-    margin-right: 0;
+    margin-right: -39px;
+  }
+
+  .page-footer__social {
+    margin-top: 40px;
+    margin-left: -13px;
+    border: none;
+    width: 125px;
   }
 }
