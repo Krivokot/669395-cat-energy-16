@@ -20,7 +20,7 @@ gulp.task("del", function(){
 gulp.task("copy", function(){
   return gulp.src([
     "source/*.html",
-    "source/fonts/**/*.{woff, woff2}",
+    "source/fonts/**/*.woff2",
     "source/img/**",
     "source/js/**",
     "source/*.ico"
