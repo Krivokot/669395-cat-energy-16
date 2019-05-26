@@ -36,6 +36,14 @@
       padding-bottom: 7px;
     }
   }
+
+  &:visited {
+    color: $second-font-color;
+  }
+
+  &:hover {
+    color: rgba(17, 17, 17, 0.6);
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -65,5 +73,13 @@
       border-bottom: 2px solid $main-color;
       padding-bottom: 7px;
     }
+  }
+
+  &:visited {
+    color: $second-font-color;
+  }
+
+  &:hover {
+    color: rgba(17, 17, 17, 0.6);
   }
 }

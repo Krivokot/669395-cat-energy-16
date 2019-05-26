@@ -214,6 +214,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    width: 1440px;
+  }
+
   .catalog__title {
     margin-left: 110px;
     margin-top: 188px;

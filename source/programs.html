@@ -7,7 +7,7 @@
     <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
     <link href="./css/style.min.css" rel="stylesheet">
     <noscript>
-      <style type="text/css">
+      <style>
         .main-nav__list {
           display: flex;
         }
@@ -46,11 +46,11 @@
       <h1 class="visually-hidden">Форма подачи заявки</h1>
       <h2 class="title main-form__title">Подбор программы</h2>
       <p class="main-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="main-form__form" name="programs-form">
+      <form class="main-form__form" name="programs-form" id="programs-form" method="post">
         <div class="main-form__info--flex">
         <fieldset class="main-form__info">
-          <label class="label main-form__input-label" for="name">Имя:*<input class="input" type="text" id="name" required placeholder="Барсик"></label>
-          <label class="label main-form__input-label" for="weight">Вес (кг):*<input class="input" type="number" id="weight" required placeholder="7"></label>
+          <label class="label main-form__input-label" for="name">Имя:*<input class="input" type="text" id="name" name="name" required placeholder="Барсик"></label>
+          <label class="label main-form__input-label" for="weight">Вес (кг):*<input class="input" type="number" id="weight" name="weight" required placeholder="7"></label>
           <label class="label main-form__input-label" for="age">Возраст (лет):<input class="input" type="number" id="age" placeholder="7"></label>
         </fieldset>
         <fieldset class="main-form__program">
@@ -75,10 +75,10 @@
           <h3 class="title title--form main-form__contact-title">Контактные данные (владельца кота)</h3>
           <div class="main-form__contact--flex">
             <label class="label main-form__input-label main-form__input-email" for="email">E-mail:*
-              <input class="input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <input class="input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
             </label>
             <label class="label main-form__input-label main-form__input-phone" for="phone">Телефон:*
-              <input class="input" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+              <input class="input" type="tel" id="phone" placeholder="8 (960) 900-60-90" required name="phone">
             </label>
           </div>
         </fieldset>
@@ -123,9 +123,7 @@
           <h2 class="map-info__description">приглашаем </br> к сотрудничеству дилеров!</h2>
           <p class="text-box map-info__description--address">ул. Большая Конюшенная, д. 19/8 <span class="map-info__city">Санкт-Петербург</span></p>
         </div>
-        <object>
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.3208587161771!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558802796347!5m2!1sru!2sru" width="320" height="363" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </object>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.3208587161771!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558802796347!5m2!1sru!2sru" width="320" height="363" style="border:0" allowfullscreen></iframe>
       </section>
     </main>
     <footer class="wrapper page-footer">

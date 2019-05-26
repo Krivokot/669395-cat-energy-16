@@ -7,6 +7,14 @@
   padding: 12px 0 13px 15px;
   margin-left: 11px;
   flex-grow: 1;
+  //
+  // &:required:invalid {
+  //   border: 2px solid #ff8282;
+  // }
+}
+
+.input__error {
+  border: 2px solid #ff8282;
 }
 
 @media (min-width: $tablet-width) {

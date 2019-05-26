@@ -239,7 +239,7 @@
 @media (min-width: $desktop-width) {
   .example {
     padding-left: 89px;
-    background: linear-gradient(top, white 22%, $second-color 22%, $second-color 80%);
+    background: linear-gradient(to top, $second-color 79%, $second-color 79%, white 10%);
     background-position: 0 -4px;
   }
 
