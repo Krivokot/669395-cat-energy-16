@@ -2,13 +2,30 @@
   width: 320px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-color: $main-color;
   padding-top: 29px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: auto 320px;
+  }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/index-can-mobile@1x.png");
+      background-repeat: no-repeat;
+      width: 280px;
+      height: 270px;
+      top: 170px;
+      left: 20px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-mobile@2x.png");
+      background-size: auto 270px;
+    }
   }
 }
 
@@ -16,7 +33,7 @@
   color: white;
   text-align: center;
   margin: auto;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .page-main__main-image {
@@ -40,14 +57,32 @@
   align-self: center;
   width: 280px;
   padding: 11px 0 11px 0;
-  margin-top: -1px;
+  margin-top: 288px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__intro {
     background-image: none;
     padding-top: 45px;
-  }
+    margin-bottom: 529px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/index-can-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      width: 709px;
+      height: 609px;
+      top: 246px;
+      left: 21px;
+      z-index: -1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-can-tablet@2x.jpg");
+        background-size: auto 600px;
+      }
+    }
+}
 
   .page-main__title {
     color: $second-font-color;
@@ -103,14 +138,32 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: right;
     margin-bottom: 79px;
+    position: relative;
+    z-index: -1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: auto 700px;
+    }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 499px;
+    top: 142px;
+    left: 560px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-can-desktop@2x.png");
+        background-size: auto 500px;
+      }
     }
   }
 
   .page-main__main-image {
-    align-self: center;
     margin: auto;
     position: absolute;
     width: 550px;
