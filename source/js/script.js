@@ -16,29 +16,29 @@ link.addEventListener("click", function(evt) {
   link.classList.toggle("main-nav__toggle-menu");
 });
 
-submit.addEventListener("click", function(evt) {
-  if (!weight.value) {
-    evt.preventDefault();
-    weight.classList.add("input__error");
-  } else {
-    weight.classList.remove("input__error");
-  }
-  if (!name.value) {
-    evt.preventDefault();
-    name.classList.add("input__error");
-  } else {
-    name.classList.remove("input__error");
-  }
-  if (!email.value) {
-    evt.preventDefault();
-    email.classList.add("input__error");
-  } else {
-    email.classList.remove("input__error");
-  }
-  if (!phone.value) {
-    evt.preventDefault();
-    phone.classList.add("input__error");
-  } else {
-    phone.classList.remove("input__error");
-  }
-});
+// submit.addEventListener("click", function(evt) {
+//   if (!name.value) {
+//     evt.preventDefault();
+//     name.classList.add("input__error");
+//   } else {
+//     name.classList.remove("input__error");
+//   }
+//   if (!weight.value) {
+//     evt.preventDefault();
+//     weight.classList.add("input__error");
+//   } else {
+//     weight.classList.remove("input__error");
+//   }
+//   if (!email.value) {
+//     evt.preventDefault();
+//     email.classList.add("input__error");
+//   } else {
+//     email.classList.remove("input__error");
+//   }
+//   if (!phone.value) {
+//     evt.preventDefault();
+//     phone.classList.add("input__error");
+//   } else {
+//     phone.classList.remove("input__error");
+//   }
+// });
