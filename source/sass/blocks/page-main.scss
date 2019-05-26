@@ -2,6 +2,7 @@
   width: 320px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-color: $main-color;
   padding-top: 29px;
   display: flex;
   flex-direction: column;
@@ -27,7 +28,7 @@
 .page-main__description {
   line-height: 14px;
   text-transform: uppercase;
-  font-family: $main-font;
+  font-family: $main-font, $second-font, sans-serif;
   color: white;
   margin-top: 23px;
   text-align: center;

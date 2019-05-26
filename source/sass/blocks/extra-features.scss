@@ -69,6 +69,7 @@
   line-height: 20px;
   background-image: url("/img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-color: $main-color;
   margin-left: 20px;
   margin-top: 56px;
   margin-bottom: 35px;
@@ -167,6 +168,7 @@
   .extra-features__gift {
     width: 708px;
     background-image: url("/img/gift-photo-tablet@1x.jpg");
+    background-color: $main-color;
     margin-left: 22px;
     margin-top: 69px;
     margin-bottom: 28px;
@@ -242,6 +244,7 @@
   .extra-features__gift {
     width: 245px;
     background-image: url("/img/gift-photo-desktop@1x.jpg");
+    background-color: $main-color;
     margin-left: 80px;
     margin-top: -18px;
 
