@@ -61,22 +61,22 @@ gulp.task("css", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/", //build
+    server: "build/", //build
     notify: false,
     open: true,
     cors: true,
     ui: false
   });
 
-//   gulp.watch("build/css/**/*.css", gulp.series("css"));
-//   gulp.watch("build/*.html").on("change", server.reload);
-// });
+  gulp.watch("build/css/**/*.css", gulp.series("css"));
+  gulp.watch("build/*.html").on("change", server.reload);
+});
 //
 // gulp.task("start", gulp.series("css", "server"));
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
-});
+//   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+//   gulp.watch("source/*.html").on("change", server.reload);
+// });
 
-gulp.task("build", gulp.series("del", "copy", "css"))
+gulp.task("build", gulp.series("del", "copy", "images", "css"))
 gulp.task("start", gulp.series("build", "server"));
