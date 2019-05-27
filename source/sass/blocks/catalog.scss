@@ -62,7 +62,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("/img/icon-plus-mobile.svg");
+    background-image: url("../img/icon-plus-mobile.svg");
     width: 31px;
     height: 31px;
     bottom: 40px;
@@ -189,7 +189,7 @@
     width: 140px;
 
     &::before {
-      background-image: url("/img/icon-plus.svg");
+      background-image: url("../img/icon-plus.svg");
       width: 61px;
       height: 61px;
       bottom: 88px;

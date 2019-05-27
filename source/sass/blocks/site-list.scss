@@ -4,6 +4,7 @@
 
 .site-list__link {
   text-decoration: none;
+  color: $second-font-color;
 
   &:visited {
     color: $second-font-color;
@@ -26,6 +27,8 @@
 
 @media (min-width: $tablet-width) {
   .site-list__link {
+    color: $second-font-color;
+
     &--active-white {
       border-bottom: 2px solid $main-color;
       padding-bottom: 7px;
@@ -48,6 +51,8 @@
 
 @media (min-width: $desktop-width) {
   .site-list__link {
+    color: $second-font-color;
+
     &--white {
       color: white;
 
